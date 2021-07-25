@@ -1,3 +1,10 @@
+/*Questions for this assignment1
+
+1.Check the first  Checkbox and verify if it is successfully checked and Uncheck it again to verify if it is successfully Unchecked
+
+2.How to get the Count of number of check boxes present in the page*/
+
+
 package udemypractices;
 
 import java.util.List;
@@ -9,10 +16,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
-public class DropdownHandle {
-	
-	
-	
+public class Assignment1 {
+
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver;
 		System.setProperty("webdriver.chrome.driver", "D:/chromedriver.exe");
@@ -48,8 +53,6 @@ public class DropdownHandle {
 		
 		List<WebElement> countCheckbox= driver.findElements(By.cssSelector("label input[type='checkbox']"));
 		System.out.println("Checkbox count = "+countCheckbox.size());
-		
-		
 		
 		
 	}
