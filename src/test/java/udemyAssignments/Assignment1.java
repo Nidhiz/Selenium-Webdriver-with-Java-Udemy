@@ -5,7 +5,7 @@
 2.How to get the Count of number of check boxes present in the page*/
 
 
-package udemypractices;
+package udemyAssignments;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;

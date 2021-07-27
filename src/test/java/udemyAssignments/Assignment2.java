@@ -6,7 +6,7 @@
 6. click on Search flights button.
 7. grab the error message and print in output.*/
 
-package udemypractices;
+package udemyAssignments;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
