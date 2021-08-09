@@ -1,7 +1,9 @@
-/*1. display number of rows and columns from Web Table Example only.
-2. display 2nd record from that table only.
+/*
+1. Display number of rows and columns from Web Table Example only.
+2. Display 2nd record from that table only.
 It should not display from any other table.
 */
+
 package udemyAssignments;
 
 import java.util.List;
@@ -39,7 +41,6 @@ public class Assignment7 {
 		{
 			System.out.println(secondRows.get(i).getText());
 		}
-
 	}
 
 }

@@ -1,10 +1,13 @@
-/*1. Select todays date
-2. click on Adults dropdown and select any number.
-3. click on children  drop down and select any number
-4. click on "More options: Class of travel, Airline preference" link
+/*
+Questions for this assignment 2
+1. Select todays date
+2. Click on Adults dropdown and select any number.
+3. Click on children  drop down and select any number.
+4. Click on "More options: Class of travel, Airline preference" link.
 5. Enter "indigo" in the Preffered Airline textbox.
-6. click on Search flights button.
-7. grab the error message and print in output.*/
+6. Click on Search flights button.
+7. Grab the error message and print in output.
+*/
 
 package udemyAssignments;
 
@@ -28,7 +31,7 @@ public class Assignment2 {
 		driver.get("https://www.cleartrip.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		
+
 		// 1.
 		WebElement ele = driver.findElement(By.cssSelector("div.flex.flex-middle.p-relative.homeCalender button"));
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -40,8 +43,10 @@ public class Assignment2 {
 		List<WebElement> listOfSelect = driver.findElements(By.cssSelector(
 				"#root > div > div > div.container.w-100p.flex-1 > div > div.col-13.homeba > div > div:nth-child(6) > div > div > select"));
 		WebElement adult = listOfSelect.get(0);
+		
 		// System.out.println(opt1.getText());
 		// opt1.click();
+		
 		Select select = new Select(adult);
 		select.selectByValue("5");
 		// System.out.println(select.getFirstSelectedOption().getText());

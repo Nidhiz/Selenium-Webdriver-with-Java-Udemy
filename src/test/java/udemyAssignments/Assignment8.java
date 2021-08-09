@@ -11,7 +11,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Assignment8 {
 
 	public static void main(String[] args) throws InterruptedException {
-
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
@@ -23,8 +22,8 @@ public class Assignment8 {
 		driver.findElement(By.id("autocomplete")).sendKeys("in");
 
 		Thread.sleep(2000);
+		
 		List<WebElement> option = driver.findElements(By.cssSelector("li.ui-menu-item"));
-
 		int count = option.size();
 
 		for (int i = 0; i < count; i++) {
@@ -33,15 +32,11 @@ public class Assignment8 {
 			String options = option.get(i).getText();
 
 			if (options.equalsIgnoreCase("INDIA")) {
-				
 				System.out.println(option.get(i).getText());
 				option.get(i).click();
 				break;
-
 			}
-	
 		}
-
 	}
 
 }

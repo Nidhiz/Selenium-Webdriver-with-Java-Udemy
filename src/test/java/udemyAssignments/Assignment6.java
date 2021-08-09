@@ -1,15 +1,12 @@
-/*1. select any checkbox
-
-2. grab the label of selected checkbox.
-
-3. select option in dropdown. Option to be selected should come from step 2.
-
-4. enter grabbed label from step 2 into text box and click on Alert.
-
-5. verify if text grabbed in step 2 is present in alert pop up message or not.
-
+/*
+1. Select any checkbox
+2. Grab the label of selected checkbox.
+3. Select option in dropdown. Option to be selected should come from step 2.
+4. Enter grabbed label from step 2 into text box and click on Alert.
+5. Verify if text grabbed in step 2 is present in alert pop up message or not.
 Do not hardcode label part.
 */
+
 package udemyAssignments;
 
 import org.openqa.selenium.By;
@@ -22,7 +19,6 @@ import org.testng.Assert;
 public class Assignment6 {
 
 	public static void main(String[] args) {
-
 		System.setProperty("webdriver.chrome.driver", "D:/chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
@@ -48,7 +44,6 @@ public class Assignment6 {
 		Assert.assertTrue(text.contains(label));
 
 		driver.switchTo().alert().accept();
-
 	}
 
 }
